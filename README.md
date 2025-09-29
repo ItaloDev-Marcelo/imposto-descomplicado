@@ -29,26 +29,23 @@ O objetivo principal é criar uma plataforma que facilite a comunicação e orga
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/SEU-USUARIO/imposto-facil-rapido.git
-
-
+   git clone https://github.com/ItaloDev-Marcelo/imposto-descomplicado.git
 
 2. Entre na pasta do projeto:
-```bash
+
 cd imposto-facil-rapido
 
 
 3. Instale as dependências:
-```bash
+
 npm install
 
 
 4. Rode o projeto:
-```bash
+
 npm run dev
 
 
 5. Acesse no navegador:
-```bash
 
 http://localhost:5173
