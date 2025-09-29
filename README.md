@@ -23,7 +23,7 @@ O objetivo principal é criar uma plataforma que facilite a comunicação e orga
 
 ## 📸 Preview do Projeto
 
-![Preview do Projeto](./imposto-descomplicado/src/assets/design/screencapture.png)
+![Preview do Projeto](./public/screencapture.png)
 
 ## 📦 Como rodar o projeto localmente
 
