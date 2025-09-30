@@ -17,7 +17,7 @@ const IncomeDataForm = () => {
        <ul className="steps">
         <li  data-content={steps >= 1  ? '✓' : 'X' } className={`step ${steps > 0 ? 'step-success' : 'step' } "`}>Step 1</li>
         <li  data-content={steps >= 2 ? '✓' : 'X' } className={`step ${steps >= 2 ? 'step-success' : 'step' } "`}>Step 2</li>
-          <li  data-content={steps >= 3 ? '✓' : 'X' } className={`step ${steps >= 3 ? 'step-success' : 'step' } "`}>Step 3</li>
+        <li  data-content={steps >= 3 ? '✓' : 'X' } className={`step ${steps >= 3 ? 'step-success' : 'step' } "`}>Step 3</li>
     
       </ul>
     
