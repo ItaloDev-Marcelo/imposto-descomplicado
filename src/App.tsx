@@ -1,12 +1,12 @@
 // import LoadingPage from './layout/LoadingPage'
 
-import PersonalDataFormStep1 from "./Form/PersonalForm/PersonalFormStep-1"
-import PersonalDataFormStep2 from "./Form/PersonalForm/PersonalFormStep-2"
+import IncomeDataForm from "./Form/IncomeDataForm"
+import PersonalDataForm from "./Form/PersonalDataForm"
 
 function App() {
   return <>
-  <PersonalDataFormStep1/>
-  <PersonalDataFormStep2/>
+      <PersonalDataForm />
+      <IncomeDataForm />
   </>
 }
 
