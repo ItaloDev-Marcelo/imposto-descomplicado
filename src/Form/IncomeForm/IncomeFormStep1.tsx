@@ -1,6 +1,7 @@
 import Input from '../../components/Input';
+import type { nextStepProps } from '../../types/form.types/nextStep.Props';
 import {RedimentosTributarios} from '../IncomeForm/Data/IncomeData';
-const IncomeDataFormStep1 = () => {
+const IncomeDataFormStep1 = ({next}:nextStepProps) => {
 
   return (
     <form>
@@ -14,6 +15,9 @@ const IncomeDataFormStep1 = () => {
           placeholder={RedimentosTributarios[3].placeholder} inputType={RedimentosTributarios[3].inputType} />
            <Input key={RedimentosTributarios[4].id} label={RedimentosTributarios[4].label}
           placeholder={RedimentosTributarios[4].placeholder} inputType={RedimentosTributarios[4].inputType} />
+              <div className='my-4'>
+                <button type="button" onClick={next} className="btn btn-accent w-[150px] ">Next</button>
+            </div>
     </form>
   )
 }

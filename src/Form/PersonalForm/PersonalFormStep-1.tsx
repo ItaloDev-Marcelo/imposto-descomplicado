@@ -1,10 +1,15 @@
 import Input from "../../components/Input"
 import RadioInput from "../../components/RadioInput"
+import type { nextStepProps } from "../../types/form.types/nextStep.Props"
 import { personalDataForm1, personalDataForm1Radio } from '../PersonalForm/Data/DataSteps'
-const PersonalDataFormStep1 = () => {
+
+
+
+const PersonalDataFormStep1 = ({next}:nextStepProps) => {
     return (
         <form>
-            <Input key={personalDataForm1[0].id} label={personalDataForm1[0].label}
+           <div className="mb-2">
+             <Input key={personalDataForm1[0].id} label={personalDataForm1[0].label}
                 placeholder={personalDataForm1[0].placeholder} inputType={personalDataForm1[0].inputType} />
             <Input key={personalDataForm1[1].id} label={personalDataForm1[1].label}
                 placeholder={personalDataForm1[1].placeholder} inputType={personalDataForm1[1].inputType} />
@@ -22,6 +27,10 @@ const PersonalDataFormStep1 = () => {
                  )
                  }
             </fieldset>
+           </div>
+            <div className='my-4'>
+                <button type="button" onClick={next} className="btn btn-accent w-[150px] ">Next</button>
+            </div>
         </form>
     )
 }

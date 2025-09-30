@@ -1,6 +1,7 @@
 import Input from '../../components/Input';
 import { RedimentosSujeitos  } from '../IncomeForm/Data/IncomeData';
-const IncomeDataFormStep3 = () => {
+import type { nextStepProps } from '../../types/form.types/nextStep.Props';
+const IncomeDataFormStep3 = ({next}:nextStepProps) => {
 
   return (
     <form>
@@ -24,7 +25,9 @@ const IncomeDataFormStep3 = () => {
     IR retido
   </label>
 </fieldset>
-
+       <div className='my-4'>
+                <button type="button" onClick={next} className="btn btn-accent w-[150px] ">Next</button>
+            </div>
     </form>
   )
 }

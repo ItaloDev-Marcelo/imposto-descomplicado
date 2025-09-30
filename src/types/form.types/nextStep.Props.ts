@@ -1,0 +1,1 @@
+export type nextStepProps = {next: () => void}

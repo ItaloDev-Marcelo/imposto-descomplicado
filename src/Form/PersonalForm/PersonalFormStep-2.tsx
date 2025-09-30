@@ -1,6 +1,8 @@
 import Input from "../../components/Input"
+import type { nextStepProps } from "../../types/form.types/nextStep.Props"
 import {personalDataForm1Step2 } from '../PersonalForm/Data/DataSteps'
-const PersonalDataFormStep2 = () => {
+
+const PersonalDataFormStep2 = ({next}:nextStepProps) => {
     return (
         <form>
             <fieldset className='fieldset'>
@@ -24,6 +26,8 @@ const PersonalDataFormStep2 = () => {
                 placeholder={personalDataForm1Step2[5].placeholder} inputType={personalDataForm1Step2[5].inputType} />
 
             </fieldset>
+
+                <button type="button"  onClick={next} className="btn btn-accent w-[150px]">Next</button>
         </form>
     )
 }
