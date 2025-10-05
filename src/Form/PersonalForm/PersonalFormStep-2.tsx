@@ -3,6 +3,29 @@ import type { nextStepProps } from "../../types/form.types/nextStep.Props"
 import {personalDataForm1Step2 } from '../PersonalForm/Data/DataSteps'
 
 const PersonalDataFormStep2 = ({next}:nextStepProps) => {
+
+
+   const dependenteDados = [
+    {
+      id: 11,
+      label: 'Nome do dependente',
+      inputType: 'text',
+      placeholder: 'ex.: João da Silva'
+    },
+    {
+      id: 12,
+      label: 'CPF do dependente',
+      inputType: 'text',
+      placeholder: 'ex.: 123.456.789-00'
+    },
+    {
+      id: 13,
+      label: 'Valor da dedução',
+      inputType: 'number',
+      placeholder: 'ex.: 2275.08 (teto anual)'
+    }
+  ];
+
     return (
         <form>
             <fieldset className='fieldset'>
@@ -24,6 +47,8 @@ const PersonalDataFormStep2 = ({next}:nextStepProps) => {
                 
                   <Input key={personalDataForm1Step2[5].id} label={personalDataForm1Step2[5].label}
                 placeholder={personalDataForm1Step2[5].placeholder} inputType={personalDataForm1Step2[5].inputType} />
+
+                
 
             </fieldset>
 

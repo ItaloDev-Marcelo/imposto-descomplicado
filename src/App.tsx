@@ -1,11 +1,9 @@
-
-import IncomeDataForm from "./Form/IncomeDataForm"
-import PersonalDataForm from "./Form/PersonalDataForm"
-
+import LoadingPage from "./layout/LoadingPage"
+import Deskboard from "./layout/Deskboard"
 function App() {
   return <>
-      <PersonalDataForm />
-      <IncomeDataForm />
+    <LoadingPage/> 
+    <Deskboard/>
   </>
 }
 

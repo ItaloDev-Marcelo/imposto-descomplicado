@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 const IncomeDataForm = () => {
 
-    const [steps, setSteps] = useState(1)
+    const [steps, setSteps] = useState(0)
   
   
     const next = () => setSteps(steps + 1)
@@ -22,16 +22,16 @@ const IncomeDataForm = () => {
       </ul>
     
          {
-          steps == 1 ?
+          steps === 0 ?
           <CommunStepContainer>
         <IncomeDataFormStep1 next={next} />
-         </CommunStepContainer> : steps == 2 ?
+         </CommunStepContainer> : steps == 1 ?
           <CommunStepContainer>
         <IncomeDataFormStep2 next={next} />
-         </CommunStepContainer> : steps == 3 ?
+         </CommunStepContainer> : steps == 2 ?
           <CommunStepContainer>
         <IncomeDataFormStep3 next={next} />
-         </CommunStepContainer> : null
+         </CommunStepContainer> : <div>fim</div>
          }
     </div>
   )
