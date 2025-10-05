@@ -1,10 +1,10 @@
 import Input from "../../../components/Input"
-// import type { nextStepProps } from "../../../types/form.types/nextStep.Props"
+import type { nextStepProps } from "../../../types/form.types/nextStep.Props"
 import { personalDataForm1 } from '../../PersonalForm/Data/DataSteps'
 
 
 
-const Personal01 = () => {
+const Personal01 = ({next}:nextStepProps) => {
     return (
         <form>
            <div className="mb-2">
@@ -16,7 +16,7 @@ const Personal01 = () => {
                 placeholder={personalDataForm1[2].placeholder} inputType={personalDataForm1[2].inputType} />
            </div>
             <div className='my-4'>
-                <button type="button" className="btn btn-info w-[150px] ">Next</button>
+                <button type="button" className="btn btn-info w-[150px]" onClick={next}>Next</button>
             </div>
         </form>
     )

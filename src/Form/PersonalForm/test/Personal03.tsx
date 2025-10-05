@@ -1,7 +1,8 @@
 import Input from "../../../components/Input"
 import {personalDataForm1Step2 } from '.././Data/DataSteps'
+import type { nextStepProps } from "../../../types/form.types/nextStep.Props"
 
-const Personal03 = () => {
+const Personal03 = ({next}:nextStepProps) => {
 
 
   //  const dependenteDados = [
@@ -38,7 +39,7 @@ const Personal03 = () => {
                   <Input key={personalDataForm1Step2[2].id} label={personalDataForm1Step2[2].label}
                 placeholder={personalDataForm1Step2[2].placeholder} inputType={personalDataForm1Step2[2].inputType} />
              </fieldset>
-                <button type="button"  className="btn btn-info w-[150px]">Next</button>
+                <button type="button"  className="btn btn-info w-[150px]" onClick={next}>Next</button>
         </form>
     )
 }

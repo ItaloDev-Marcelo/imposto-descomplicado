@@ -20,16 +20,16 @@ const Deskboard = () => {
    const nextForm = () => {
        switch(nextStep) {
          case 1:
-            return <CommunStepContainer><Personal01 /></CommunStepContainer>;
+            return <CommunStepContainer><Personal01 next={() => setNextStep(nextStep + 1)} /></CommunStepContainer>;
          break;  
          case 2:
-            return <CommunStepContainer><Personal02 /></CommunStepContainer>;
+            return <CommunStepContainer><Personal02 next={() => setNextStep(nextStep + 1)} /></CommunStepContainer>;
          break;
          case 3:
-            return <CommunStepContainer><Personal03 /></CommunStepContainer>;
+            return <CommunStepContainer><Personal03 next={() => setNextStep(nextStep + 1)} /></CommunStepContainer>;
          break;
          case 4:
-            return <CommunStepContainer><Personal04 /></CommunStepContainer>;
+            return <CommunStepContainer><Personal04 next={() => setNextStep(nextStep + 1)} /></CommunStepContainer>;
          break;       
        }
    }
@@ -64,7 +64,7 @@ const Deskboard = () => {
             <section className='relative'>
               { nextStep <= 0 && <h2 className='text-center items-center mt-70 text-3xl font-bold'>Not data found</h2>}
                <button className='btn absolute right-7 top-5 btn-sucess rounded-2xl w-[50px] h-[50px]'
-                onClick={() => setNextStep(nextStep + 1)}><IoIosAddCircleOutline/></button>
+               onClick={() => setNextStep(nextStep + 1)}><IoIosAddCircleOutline/></button>
             </section>
 
         </main>
