@@ -1,6 +1,6 @@
-import Input from "../../../components/Input"
-import {personalDataForm1Step2 } from '.././Data/DataSteps'
-import type { nextStepProps } from "../../../types/form.types/nextStep.Props"
+import Input from "../../components/Input"
+import {personalDataForm1Step2 } from './Data/DataSteps'
+import type { nextStepProps } from "../../types/form.types/nextStep.Props"
 
 const Personal03 = ({next}:nextStepProps) => {
 

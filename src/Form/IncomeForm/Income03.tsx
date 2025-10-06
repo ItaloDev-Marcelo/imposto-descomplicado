@@ -1,7 +1,7 @@
 import Input from '../../components/Input';
 import { RedimentosSujeitos  } from '../IncomeForm/Data/IncomeData';
 import type { nextStepProps } from '../../types/form.types/nextStep.Props';
-const IncomeDataFormStep3 = ({next}:nextStepProps) => {
+const Income03 = ({next}:nextStepProps) => {
 
   return (
     <form>
@@ -32,4 +32,4 @@ const IncomeDataFormStep3 = ({next}:nextStepProps) => {
   )
 }
 
-export default IncomeDataFormStep3
+export default Income03

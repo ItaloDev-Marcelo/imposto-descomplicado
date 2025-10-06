@@ -36,22 +36,26 @@ export const personalDataForm1Radio = [
     {
         id: 12,
         name: 'estado-civil',
-        title: 'solteiro(a)'
+        title: 'solteiro(a)',
+        inputType: 'radio'
     },
     {
         id: 122,
         name: 'estado-civil',
-        title: 'casado(a)'
+        title: 'casado(a)',
+        inputType: 'radio'
     },
     {
         id: 3211,
         name: 'estado-civil',
-        title: 'divorciado(a) '
+        title: 'divorciado(a) ',
+        inputType: 'radio'
     },
     {
         id: 433,
         name: 'estado-civil',
-        title: 'viúvo(a)'
+        title: 'viúvo(a)',
+        inputType: 'radio'
     }
 ];
 

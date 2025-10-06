@@ -8,11 +8,15 @@ import { CgDetailsMore } from "react-icons/cg";
 import { AiFillDatabase } from "react-icons/ai";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
-import Personal01 from '../Form/PersonalForm/test/Personal01';
-import Personal02 from '../Form/PersonalForm/test/Personal02';
-import Personal03 from '../Form/PersonalForm/test/Personal03';
-import Personal04 from '../Form/PersonalForm/test/Personal04';
+import Personal01 from '../Form/PersonalForm/Personal01';
+import Personal02 from '../Form/PersonalForm/Personal02';
+import Personal03 from '../Form/PersonalForm/Personal03';
+import Personal04 from '../Form/PersonalForm/Personal04';
 import CommunStepContainer from '../utils/CommumStepContainer';
+import Income01 from '../Form/IncomeForm/Income01';
+import Income02 from '../Form/IncomeForm/Income02';
+import Income03 from '../Form/IncomeForm/Income03';
+
 const Deskboard = () => {
 
    const [nextStep, setNextStep] = useState(0);
@@ -30,6 +34,15 @@ const Deskboard = () => {
          break;
          case 4:
             return <CommunStepContainer><Personal04 next={() => setNextStep(nextStep + 1)} /></CommunStepContainer>;
+         break;       
+         case 5:
+            return <CommunStepContainer><Income01 next={() => setNextStep(nextStep + 1)} /></CommunStepContainer>;
+         break;       
+         case 6:
+            return <CommunStepContainer><Income02 next={() => setNextStep(nextStep + 1)} /></CommunStepContainer>;
+         break;       
+         case 7:
+            return <CommunStepContainer><Income03 next={() => setNextStep(nextStep + 1)} /></CommunStepContainer>;
          break;       
        }
    }

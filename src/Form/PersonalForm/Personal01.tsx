@@ -1,6 +1,6 @@
-import Input from "../../../components/Input"
-import type { nextStepProps } from "../../../types/form.types/nextStep.Props"
-import { personalDataForm1 } from '../../PersonalForm/Data/DataSteps'
+import Input from "../../components/Input"
+import type { nextStepProps } from "../../types/form.types/nextStep.Props"
+import { personalDataForm1 } from './Data/DataSteps'
 
 
 
